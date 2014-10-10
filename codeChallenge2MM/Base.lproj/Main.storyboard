@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,11 +16,55 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NIv-WW-vxf">
+                                <rect key="frame" x="0.0" y="24" width="600" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aiq-4O-IgX">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aiq-4O-IgX" id="SXh-8c-rFO">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="NIv-WW-vxf" secondAttribute="trailing" constant="15" id="XDe-fC-iCp"/>
+                            <constraint firstItem="NIv-WW-vxf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="dJT-sy-kHD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NIv-WW-vxf" secondAttribute="bottom" constant="88" id="eYF-Cp-cir"/>
+                            <constraint firstItem="NIv-WW-vxf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="67" id="iUa-j8-Erw"/>
+                            <constraint firstAttribute="centerY" secondItem="NIv-WW-vxf" secondAttribute="centerY" id="jkO-nr-6i6"/>
+                            <constraint firstAttribute="centerX" secondItem="NIv-WW-vxf" secondAttribute="centerX" id="vF7-Xb-3yN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XDe-fC-iCp"/>
+                                <exclude reference="dJT-sy-kHD"/>
+                                <exclude reference="iUa-j8-Erw"/>
+                                <exclude reference="jkO-nr-6i6"/>
+                                <exclude reference="vF7-Xb-3yN"/>
+                                <exclude reference="eYF-Cp-cir"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="XDe-fC-iCp"/>
+                                <include reference="dJT-sy-kHD"/>
+                                <include reference="iUa-j8-Erw"/>
+                                <include reference="jkO-nr-6i6"/>
+                                <include reference="vF7-Xb-3yN"/>
+                                <include reference="eYF-Cp-cir"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="136"/>
         </scene>
     </scenes>
 </document>
