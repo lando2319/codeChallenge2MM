@@ -10,7 +10,7 @@
 #import "City.h"
 
 @interface ViewController () <CityDelegate>
-@property NSMutableArray *cities;
+@property NSMutableArray *currentCities;
 
 @end
 
@@ -19,18 +19,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.city = [[City alloc] init];
-    self.state = [[City alloc] init];
-
     self.city.delegate = self;
-    self.state.delegate = self;
+    self.currentCities = [[NSMutableArray alloc] init];
 
-    self.cities = [NSMutableArray array];
-    [self.cities addObject:@"Chicago"];
-    [self.cities addObject:@"Longyearbyen"];
-    [self.cities addObject:@"Hanga Roa"];
+    self.city.cityActual = @"Hanga Roa";
+    [self.currentCities addObject:self.city.cityActual];
 
-    NSLog(@"%@", self.cities);
-    NSLog(@"view log");
+    self.city.cityActual = @"Longyearbyen";
+    [self.currentCities addObject:self.city.cityActual];
+
+    self.city.cityActual = @"Chicago";
+    [self.currentCities addObject:self.city.cityActual];
+
+    NSLog(@"%@", self.currentCities);
+//    NSLog(@"view log");
+//    NSLog(@"%@", self.currentCities);
 //    [self.cities addObject: [NSObject ]];
 
 

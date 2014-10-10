@@ -16,8 +16,8 @@
 
 
 @interface City : UIViewController
-@property City *city;
-@property City *state;
+@property NSString *cityActual;
+@property NSString *state;
 
 @property id <CityDelegate> delegate;
 

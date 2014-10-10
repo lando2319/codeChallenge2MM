@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -33,31 +32,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="NIv-WW-vxf" secondAttribute="trailing" constant="15" id="XDe-fC-iCp"/>
-                            <constraint firstItem="NIv-WW-vxf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="dJT-sy-kHD"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NIv-WW-vxf" secondAttribute="bottom" constant="88" id="eYF-Cp-cir"/>
-                            <constraint firstItem="NIv-WW-vxf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="67" id="iUa-j8-Erw"/>
-                            <constraint firstAttribute="centerY" secondItem="NIv-WW-vxf" secondAttribute="centerY" id="jkO-nr-6i6"/>
-                            <constraint firstAttribute="centerX" secondItem="NIv-WW-vxf" secondAttribute="centerX" id="vF7-Xb-3yN"/>
+                            <constraint firstItem="NIv-WW-vxf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="32" id="LlF-HR-QQ7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NIv-WW-vxf" secondAttribute="bottom" constant="88" id="TJg-gh-D6d"/>
+                            <constraint firstItem="NIv-WW-vxf" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="67" id="nTc-pK-2ot"/>
+                            <constraint firstAttribute="trailing" secondItem="NIv-WW-vxf" secondAttribute="trailing" constant="31" id="uGo-eL-7vA"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="XDe-fC-iCp"/>
-                                <exclude reference="dJT-sy-kHD"/>
-                                <exclude reference="iUa-j8-Erw"/>
-                                <exclude reference="jkO-nr-6i6"/>
-                                <exclude reference="vF7-Xb-3yN"/>
-                                <exclude reference="eYF-Cp-cir"/>
+                                <exclude reference="LlF-HR-QQ7"/>
+                                <exclude reference="nTc-pK-2ot"/>
+                                <exclude reference="uGo-eL-7vA"/>
+                                <exclude reference="TJg-gh-D6d"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="XDe-fC-iCp"/>
-                                <include reference="dJT-sy-kHD"/>
-                                <include reference="iUa-j8-Erw"/>
-                                <include reference="jkO-nr-6i6"/>
-                                <include reference="vF7-Xb-3yN"/>
-                                <include reference="eYF-Cp-cir"/>
+                                <include reference="LlF-HR-QQ7"/>
+                                <include reference="nTc-pK-2ot"/>
+                                <include reference="uGo-eL-7vA"/>
+                                <include reference="TJg-gh-D6d"/>
                             </mask>
                         </variation>
                     </view>
