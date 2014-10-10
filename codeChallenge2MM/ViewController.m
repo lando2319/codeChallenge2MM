@@ -12,6 +12,9 @@
 @interface ViewController () <CityDelegate>
 @property NSMutableArray *currentCities;
 
+
+
+
 @end
 
 @implementation ViewController
@@ -32,12 +35,10 @@
     [self.currentCities addObject:self.city.cityActual];
 
     NSLog(@"%@", self.currentCities);
-//    NSLog(@"view log");
-//    NSLog(@"%@", self.currentCities);
-//    [self.cities addObject: [NSObject ]];
-
 
 }
+
+
 
 
 
