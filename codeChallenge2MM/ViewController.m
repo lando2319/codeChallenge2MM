@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "City.h"
 
-@interface ViewController ()
+@interface ViewController () <CityDelegate>
 
 @end
 
@@ -16,12 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.city = [[City alloc] init];
+    self.state = [[City alloc] init];
+
+    self.city.delegate = self;
+    self.state.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
 
 @end

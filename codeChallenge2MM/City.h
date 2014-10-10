@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  City.h
 //  codeChallenge2MM
 //
 //  Created by MIKE LAND on 10/10/14.
@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "City.h"
 
-@interface ViewController : UIViewController
+@protocol CityDelegate
 
-@property City *city;
-@property City *state;
+
 
 @end
 
+
+@interface City : UIViewController
+@property City *city;
+@property City *state;
+
+@property id <CityDelegate> delegate;
+
+
+@end

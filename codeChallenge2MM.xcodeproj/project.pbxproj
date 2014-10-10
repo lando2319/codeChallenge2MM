@@ -15,6 +15,7 @@
 		CC49C87A19E825DD00E14C19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC49C87919E825DD00E14C19 /* Images.xcassets */; };
 		CC49C87D19E825DD00E14C19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC49C87B19E825DD00E14C19 /* LaunchScreen.xib */; };
 		CC49C88919E825DE00E14C19 /* codeChallenge2MMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC49C88819E825DE00E14C19 /* codeChallenge2MMTests.m */; };
+		CC49C89419E8263600E14C19 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = CC49C89319E8263600E14C19 /* City.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		CC49C88219E825DE00E14C19 /* codeChallenge2MMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeChallenge2MMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC49C88719E825DE00E14C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC49C88819E825DE00E14C19 /* codeChallenge2MMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = codeChallenge2MMTests.m; sourceTree = "<group>"; };
+		CC49C89219E8263600E14C19 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		CC49C89319E8263600E14C19 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				CC49C86E19E825DD00E14C19 /* AppDelegate.m */,
 				CC49C87319E825DD00E14C19 /* ViewController.h */,
 				CC49C87419E825DD00E14C19 /* ViewController.m */,
+				CC49C89219E8263600E14C19 /* City.h */,
+				CC49C89319E8263600E14C19 /* City.m */,
 				CC49C87619E825DD00E14C19 /* Main.storyboard */,
 				CC49C87919E825DD00E14C19 /* Images.xcassets */,
 				CC49C87B19E825DD00E14C19 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC49C89419E8263600E14C19 /* City.m in Sources */,
 				CC49C87219E825DD00E14C19 /* codeChallenge2MM.xcdatamodeld in Sources */,
 				CC49C86F19E825DD00E14C19 /* AppDelegate.m in Sources */,
 				CC49C87519E825DD00E14C19 /* ViewController.m in Sources */,
