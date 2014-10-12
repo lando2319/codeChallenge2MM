@@ -13,6 +13,7 @@
 @property NSMutableArray *currentCities;
 @property (weak, nonatomic) IBOutlet UITableView *cityTableView;
 
+@property (weak, nonatomic) IBOutlet UIButton *editButton;
 
 
 
@@ -53,6 +54,9 @@
 }
 
 
+- (IBAction)editButtonPressed:(id)sender {
+    self.cityTableView.editing = !self.cityTableView.editing;
+}
 
 
 

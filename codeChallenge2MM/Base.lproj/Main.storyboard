@@ -33,6 +33,18 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Glr-JP-4jt"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqL-qU-HAh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Edit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="185" y="49" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="editButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RxP-k3-4N1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -42,6 +54,9 @@
                             <constraint firstAttribute="trailing" secondItem="NIv-WW-vxf" secondAttribute="trailing" constant="31" id="uGo-eL-7vA"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="JqL-qU-HAh"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="LlF-HR-QQ7"/>
                                 <exclude reference="nTc-pK-2ot"/>
@@ -50,6 +65,9 @@
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="JqL-qU-HAh"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="LlF-HR-QQ7"/>
                                 <include reference="nTc-pK-2ot"/>
@@ -60,6 +78,7 @@
                     </view>
                     <connections>
                         <outlet property="cityTableView" destination="NIv-WW-vxf" id="51K-Kg-zIe"/>
+                        <outlet property="editButton" destination="JqL-qU-HAh" id="kbV-9L-Z5C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
