@@ -54,6 +54,13 @@
 }
 
 
+- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Go Time");
+    [self.currentCities removeObjectAtIndex:indexPath.row];
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    [self.cityTableView reloadData];
+}
+
 - (IBAction)editButtonPressed:(id)sender {
     self.cityTableView.editing = !self.cityTableView.editing;
 }
