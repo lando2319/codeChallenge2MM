@@ -47,7 +47,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCellID" forIndexPath:indexPath];
-    NSLog(@"%@", self.currentCities);
+//    NSLog(@"%@", self.currentCities);
     City *cityVar = [self.currentCities objectAtIndex:indexPath.row];
     cell.textLabel.text = cityVar.cityActual;
 
@@ -68,8 +68,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CityDetailsController *detailedView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsVC"];
-    detailedView.cityDetailsActualString = [self.currentCities objectAtIndex:indexPath.row];
+
+    City *testingVar = [self.currentCities objectAtIndex:indexPath.row];
+    detailedView.cityDetailsActualString = testingVar.cityActual;
     [self.navigationController pushViewController:detailedView animated:YES];
+
 }
 
 
