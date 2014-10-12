@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1BADD019EB1A1A0072EF97 /* CityDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC1BADCF19EB1A1A0072EF97 /* CityDetailsController.m */; };
 		CC49C86C19E825DD00E14C19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC49C86B19E825DD00E14C19 /* main.m */; };
 		CC49C86F19E825DD00E14C19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC49C86E19E825DD00E14C19 /* AppDelegate.m */; };
 		CC49C87219E825DD00E14C19 /* codeChallenge2MM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC49C87019E825DD00E14C19 /* codeChallenge2MM.xcdatamodeld */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC1BADCE19EB1A1A0072EF97 /* CityDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDetailsController.h; sourceTree = "<group>"; };
+		CC1BADCF19EB1A1A0072EF97 /* CityDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDetailsController.m; sourceTree = "<group>"; };
 		CC49C86619E825DD00E14C19 /* codeChallenge2MM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeChallenge2MM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC49C86A19E825DD00E14C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC49C86B19E825DD00E14C19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 		CC49C86819E825DD00E14C19 /* codeChallenge2MM */ = {
 			isa = PBXGroup;
 			children = (
+				CC1BADCE19EB1A1A0072EF97 /* CityDetailsController.h */,
+				CC1BADCF19EB1A1A0072EF97 /* CityDetailsController.m */,
 				CC49C86D19E825DD00E14C19 /* AppDelegate.h */,
 				CC49C86E19E825DD00E14C19 /* AppDelegate.m */,
 				CC49C87319E825DD00E14C19 /* ViewController.h */,
@@ -230,6 +235,7 @@
 				CC49C89419E8263600E14C19 /* City.m in Sources */,
 				CC49C87219E825DD00E14C19 /* codeChallenge2MM.xcdatamodeld in Sources */,
 				CC49C86F19E825DD00E14C19 /* AppDelegate.m in Sources */,
+				CC1BADD019EB1A1A0072EF97 /* CityDetailsController.m in Sources */,
 				CC49C87519E825DD00E14C19 /* ViewController.m in Sources */,
 				CC49C86C19E825DD00E14C19 /* main.m in Sources */,
 			);
@@ -422,6 +428,7 @@
 				CC49C88E19E825DE00E14C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC49C88F19E825DE00E14C19 /* Build configuration list for PBXNativeTarget "codeChallenge2MMTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				CC49C89119E825DE00E14C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

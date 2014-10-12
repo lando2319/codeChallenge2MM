@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "City.h"
+#import "CityDetailsController.h"
 
 @interface ViewController () <CityDelegate, UITableViewDataSource, UITableViewDelegate>
 @property NSMutableArray *currentCities;
@@ -65,31 +66,11 @@
     self.cityTableView.editing = !self.cityTableView.editing;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CityDetailsController *detailedView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsVC"];
+    detailedView.cityDetailsActualString = [self.currentCities objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detailedView animated:YES];
+}
 
 
 
